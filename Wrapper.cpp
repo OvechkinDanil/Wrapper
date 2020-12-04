@@ -22,7 +22,6 @@ int Wrapper::useFunction(std::map<std::string, int> MapArguments)
 {
 	std::vector<int> args;
 	
-
 	if (MapArguments.size() != argName.size())
 		return func(argDefaultValues);
 
