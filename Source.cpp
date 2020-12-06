@@ -3,13 +3,19 @@
 #include "Classes.h"
 
 
-
-
-int main()
+int f2(int a, int b)
 {
+  return a - b;
+}
+
+int main(void)
+{
+  
   Subject subj;
 
-  Wrapper wrapper(&subj, &Subject::f3, { {"arg1", 0}, {"arg2", 0} });
+  /*Wrapper wrapper(&subj, &Subject::f3, { {"arg1", 0}, {"arg2", 0} });*/
+
+  Wrapper wrapper(&f2, { {"arg1", 0}, {"arg2", 0} }); 
 
   Engine engine;
 
